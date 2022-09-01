@@ -10,6 +10,6 @@ public class WebSecurityConfig{
 
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
-        return (web) -> web.ignoring().antMatchers("/hello");
+        return (web) -> web.ignoring().antMatchers("/hello","/users/**","/users");
     }
 }
